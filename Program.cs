@@ -2,23 +2,24 @@ using System;
 using System.Collections.Generic;
 using TextGame.Game;
 
-namespace TextGame.Game {
+namespace TextGame {
 
   public class Program
   {
       public static void Main()
       {
           List<Item> ItemList = new List<Item>();
-            AddItem();
-            OpenInventory();
+          Item newItem = new Item();
+            newItem.AddItem();
+            newItem.OpenInventory();
           Console.WriteLine(""); //Tutorial Explanation LONGGGGGGGGGGGG
           Console.WriteLine("Would you like to begin your adventure?");
-          string gameStart = Console.ReadLine();
+            string gameStart = Console.ReadLine();
           if (gameStart.ToLower() == "y")
           {
               
               Console.WriteLine("You start in room with a door and a hammer on the ground");//EXPOSITION
-              AddItem();
+              newItem.AddItem();
               bool playing = true;
               while (playing)
                     {

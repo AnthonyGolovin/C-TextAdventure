@@ -1,3 +1,6 @@
+//Player walks around a room with multiple objects that they can interact with in order to try to exit.
+//Example game: Zork
+
 using System;
 using System.Collections.Generic;
 
