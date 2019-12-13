@@ -10,7 +10,7 @@ namespace TextGame {
       {
           List<Item> ItemList = new List<Item>();
           Item newItem = new Item();
-            newItem.AddItem();
+            Item.AddItem();
             newItem.OpenInventory();
           Console.WriteLine(""); //Tutorial Explanation LONGGGGGGGGGGGG
           Console.WriteLine("Would you like to begin your adventure?");
@@ -19,7 +19,7 @@ namespace TextGame {
           {
               
               Console.WriteLine("You start in room with a door and a hammer on the ground");//EXPOSITION
-              newItem.AddItem();
+              Item.AddItem();
               bool playing = true;
               while (playing)
                     {
