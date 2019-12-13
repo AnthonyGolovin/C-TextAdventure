@@ -9,7 +9,7 @@ namespace TextGame {
       public static void Main()
       {
           List<Item> ItemList = new List<Item>();
-          Item newItem = new Item();
+          Item newItem = new Item("spoon", "hammer");
             Item.AddItem();
             newItem.OpenInventory();
           Console.WriteLine(""); //Tutorial Explanation LONGGGGGGGGGGGG
